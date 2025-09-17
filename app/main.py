@@ -44,6 +44,5 @@ app = create_app()
 
 if __name__ == "__main__":
     import uvicorn
-    # For reliable reload, pass the import string (not the object)
     uvicorn.run("app.main:app", host="127.0.0.1", port=8000, reload=True)
 
